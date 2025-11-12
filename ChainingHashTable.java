@@ -102,6 +102,12 @@ public class ChainingHashTable<K, V> implements MapADT<K, V> {
       return null; // Key not found
    }
    
+   // Implements MapADT.search(K) - searches for a value by key
+   @Override
+   public V search(K key) {
+      return get(key);
+   }
+   
    public boolean contains(K key) {
       return get(key) != null;
    }
