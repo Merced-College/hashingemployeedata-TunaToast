@@ -59,7 +59,16 @@ public class Main {
             e.printStackTrace();
         }
 
-        // TODO: print total employees, duplicates found, and duplicate list
+        // Print the statistics
+        System.out.println("Total employees loaded: " + totalLoaded);
+        System.out.println("Duplicates found: " + duplicatesFound);
+       
+        if (!duplicates.isEmpty()) {
+            System.out.println("\nDuplicate employees:");
+            for (Employee emp : duplicates) {
+                System.out.println(emp.toString());
+            }
+        }
     }
 
     // helper for cleaning up salary strings
