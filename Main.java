@@ -13,7 +13,7 @@ public class Main {
     int totalLoaded = 0;
     int duplicatesFound = 0;
 
-        try (BufferedReader br = new BufferedReader(new FileReader("Employee_data.csv"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("Employee_data.txt"))) {
             String line = br.readLine(); // skip header
             while ((line = br.readLine()) != null) {
                 String[] cols = line.split(",", -1);
