@@ -1,10 +1,18 @@
+// Brenda Romero
+// Brice Yang
+// James McKean
+// CPSC-39-12705
+// 11/13/25
+// Main.java
+
 import java.io.*;
 import java.util.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
     // Create your ChainingHashTable using zyBook code
-    ChainingHashTable<String, Employee> table = new ChainingHashTable<>(11);
+    ChainingHashTable<String, Employee> table = new ChainingHashTable<>(50111);
 
     // ArrayList to store duplicate Employee objects
     ArrayList<Employee> duplicates = new ArrayList<>();

@@ -1,3 +1,12 @@
+// Brenda Romero
+// Brice Yang
+// James McKean
+// CPSC-39-12705
+// 11/13/25
+// Employee.java
+
+
+
 import java.util.Objects;
 
 public class Employee {
@@ -24,6 +33,13 @@ public class Employee {
         this.department = department;
         this.annualSalary = annualSalary;
         this.estimatedAnnualMinusFurloughs = estMinusFurloughs;
+    }
+
+    //this has code method was made for standarization and will not
+    //be used in our current implementation, the hash should be the first and last name
+    //concatenated
+    public int hashCode() {
+        return (firstName + lastName).hashCode();
     }
 
     // Getters and setters
@@ -90,8 +106,8 @@ public class Employee {
                 Objects.equals(department, employee.department);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(lastName, firstName, department);
-    }
+    //@Override
+    //public int hashCode() {
+    //    return Objects.hash(lastName, firstName, department);
+    //}
 }

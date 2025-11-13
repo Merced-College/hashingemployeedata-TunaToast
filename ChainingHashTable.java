@@ -1,3 +1,10 @@
+// Brenda Romero
+// Brice Yang
+// James McKean
+// CPSC-39-12705
+// 11/13/25
+// ChainingHashTable.java
+
 import java.io.PrintStream;
 
 public class ChainingHashTable<K, V> implements MapADT<K, V> {
@@ -5,7 +12,7 @@ public class ChainingHashTable<K, V> implements MapADT<K, V> {
 
    public ChainingHashTable() {
       // Initialize with an initial capacity of 11
-      this(11);
+      this(50111);
    }
 
    public ChainingHashTable(int initialCapacity) {

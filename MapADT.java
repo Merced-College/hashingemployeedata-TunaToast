@@ -1,3 +1,10 @@
+// Brenda Romero
+// Brice Yang
+// James McKean
+// CPSC-39-12705
+// 11/13/25
+// MapADT.java
+
 /**
  * MapADT is a generic interface for a key-value mapping data structure.
  * It defines the contract for basic map operations like insert, search, and remove.
